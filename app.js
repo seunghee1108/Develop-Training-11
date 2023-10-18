@@ -8,14 +8,26 @@ const contentType = {
 
 const server = http.createServer((request, response) => {
   if(request.method === 'GET' && request.url === '/') {
-    fs.readFile('index.html', (err, data) => {
+    fs.readFile('./mod/signup.html', (err, data) => {
       if(err) {
-        console.log('파일 호출 에러');
-      } else {
+        console.error('파일 호출 에러');
+      }
+      else {
         response.writeHead(200, contentType);
         response.end(data);
       }
-    })
+    });
+  }
+    if(request.method === 'GET' && request.url === '/send.html?'){
+    fs.readFile('./mod/send.html', (err, data) => {
+      if(err) {
+        console.error('파일 호출 에러');
+      }
+      else {
+        response.writeHead(200, contentType);
+        response.end(data);
+      }
+    });
   }
 });
 server.listen(8080);
