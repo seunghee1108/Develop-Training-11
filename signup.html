@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="send.html" method="GET">
+    <p>ID</p>
+    <input type="text" id="id">
+    <br>
+    <p>PW</p>
+    <input type="text" id="pwOne">
+    <br>
+    <p>PW</p>
+    <input type="text" id="pwTwo">
+    <br>
+    <p>Email</p>
+    <input type="text" id="email">
+    <br>
+    <input type="submit" id="signup">
+  </form>
+  
+  <script>
+    // 정규식
+    replaceFirst()
+    
+    function check_email() {
+        let input = document.getElementById("email").value
+
+        let email_format = /^([0-9a-zA-Z_\.-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
+        if (email_format.test(input)) alert("이메일 입력 성공!");
+        else {
+            alert("잘못된 이메일 형식입니다");
+            document.getElementById("email").value = "";
+        }
+    }
+    
+  </script>
+</body>
+</html>
