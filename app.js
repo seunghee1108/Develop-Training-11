@@ -19,7 +19,7 @@ const server = http.createServer((request, response) => {
   }
   // send html 파일 읽기 
   // requset.url === '/send.html?' 확인
-    if(request.method === 'GET' && request.url === '/send.html?'){
+    if(request.method === 'GET' && request.url === '.static/send.html'){
     fs.readFile('./static/send.html', (err, data) => {
       if(err) {
         console.error('파일 호출 에러');
