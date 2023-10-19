@@ -11,62 +11,22 @@
     <input type="text" id="id" name="id">
     <br>
     <p>PW</p>
-    <input type="text" id="pwOne" name="passwordOne">
+    <input type="text" id="pwOne" name="pwOne">
     <br>
     <p>PW</p>
-    <input type="text" id="pwTwo" name="passwordTwo">
+    <input type="text" id="pwTwo" name="pwTwo">
     <br>
     <p>Email</p>
     <input type="text" id="email" name="email" >
     <br>
-    <input type="submit" id="signup">
+    <input type="submit" id="signup" value="sign">
   </form>
-  <script>
-    function joinform_check() {
+  <!-- <script>
     const id = document.getElementById("id");
     const pwOne = document.getElementById("pwOne");
     const pwTwo = document.getElementById("pwTwo");
     const email = document.getElementById("email")
     const signup = document.getElementById("signup")
-
-    // 영문자 대소문자
-    const regIdPw =  /^[a-zA-Z]$/;
-    // 이메일 작성
-    const regMail = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/;
-
-    // id 입력
-    if(id.value == ""){
-      alert('아이디를 입력하세요.');
-      // focus() : 커서가 깜빡이는 현상, 
-      id.focus();
-      // return false : 아무것도 반환하지 마세요.
-      return false;
-    } else if (!regIdPw.test(id.value)){
-      alert('영문 대소문자만 입력하세요.')
-      id.focus();
-      return false;
-    }
-
-    // pw 입력
-    if(pwOne.value == ""){
-      alert('비밀번호를 입력하세요.');
-      pwOne.focus();
-      return false;
-    } else if (pwOne != pwTwo){
-      alert('비밀번호가 틀렸습니다.')
-    }
-    
-    //email
-    if(email.value = ""){
-      alert('이메일을 입력하세요.');
-      email.focus();
-      return false; 
-    } else if(!regMail.test(email.value)){
-      alert('올바른 이메일 형식이 아닙니다.')
-      email.focus();
-      return false;
-    };
-  }
-  </script>
+  </script> -->
 </body>
 </html>
