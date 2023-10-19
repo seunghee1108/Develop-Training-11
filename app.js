@@ -7,7 +7,7 @@ const contentType = {
 }
 const server = http.createServer((request, response) => {
   if(request.method === 'GET' && request.url === '/') {
-    fs.readFile('./mod/signup.html', (err, data) => {
+    fs.readFile('./signup.html', (err, data) => {
       if(err) {
         console.error('파일 호출 에러');
       }
@@ -20,7 +20,7 @@ const server = http.createServer((request, response) => {
   // send html 파일 읽기 
   // requset.url === '/send.html?' 확인
     if(request.method === 'GET' && request.url === '/send.html?'){
-    fs.readFile('./mod/send.html', (err, data) => {
+    fs.readFile('./send.html', (err, data) => {
       if(err) {
         console.error('파일 호출 에러');
       }
