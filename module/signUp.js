@@ -1,4 +1,4 @@
-const signupAsset = {
+const signUpAsset = {
   id : "",
   password : "",
   email : "",
