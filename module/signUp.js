@@ -7,5 +7,4 @@ const signupAsset = {
   pointColor : "#FF6666",
 }
 
-
 module.exports = signUpAsset;
