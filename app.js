@@ -21,6 +21,7 @@ const server = http.createServer((request, response) => {
     });
   }
   
+  
   // send html 파일 읽기 
   // requset.url === '/send.html?' 확인 (main에서는 ? 없이 연결됨)
   // method = POST 
