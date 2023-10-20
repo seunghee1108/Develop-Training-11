@@ -1,10 +1,14 @@
 const http = require('http');
 const fs = require('fs');
+
 const quereystring = require('querystring');
+
 const signUpAsset = require('./module/signUp.js');
+// id, pw, email 모듈 가져오기
 const idCheck = require('./module2/idcheck.js');
 const pwCheck = require('./module2/pwcheck.js');
 const emailCheck = require('./module2/emailcheck.js');
+
 const contentType = {
   'content-Type' : 'text/html',
   'charset' : 'utf-8',

@@ -13,3 +13,5 @@ function emailCheck(mail) {
 
 email.indexOf("@");
 email.indexOf(".");
+
+module.exports = emailCheck;
